@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en-US" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en-US%22%7D%7D">
+<title>0xPULSE • Official</title>
+<link rel="stylesheet" href="stylesheet_0.css">
+<link rel="stylesheet" href="stylesheet_1.css">
+<link rel="stylesheet" href="stylesheet_2.css">
+<link data-n-head="ssr" rel="icon" type="image/x-icon" href="images/7.png">
+<script src="jquery.js"></script>
+<style>
+    .sf-hidden {
+      display: none !important
+    }
+  </style>
+<style>
+    img[src="data:,"],
+    source[src="data:,"] {
+      display: none !important
+    }
+
+     html {
+      overflow: scroll;
+      overflow-x: hidden;
+    } 
+
+    /* body{
+      overflow: scroll;
+    } */
+  </style>
+<style>
+#s .ct .lst > div:nth-child(1).animate {
+  animation-delay: 0s;
+}
+
+#s .ct .lst > div:nth-child(2).animate {
+  animation-delay: 0.125s;
+}
+
+#s .ct .lst > div:nth-child(3).animate {
+  animation-delay: 0.25s;
+}
+
+#s .ct .lst > div:nth-child(4).animate {
+  animation-delay: 0.375s;
+}
+
+#s .ct .lst > div:nth-child(5).animate {
+  animation-delay: 0.5s;
+}
+
+#s .ct .lst > div.animate {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: scroll-up 0.5s ease-in-out forwards;
+}
+
+#s .ct .lst > div {
+  opacity: 0;
+}
+
+.div, #s .ct .title *{
+  opacity: 0;
+}
+
+#tvl .ct div.head {
+  opacity: 0;
+}
+
+.div, #pa .ct .title *{
+  opacity: 0;
+}
+
+.div, #te .ct .title *{
+  opacity: 0;
+}
+
+.div, #te .ct .lst *{
+  opacity: 0;
+}
+
+.animate {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: scroll-up 0.5s ease-in-out forwards;
+}
+
+@keyframes scroll-up {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+.fade-in {
+  animation: slideUp 1s ease-out, fadeIn 1s ease-in-out;
+  animation-fill-mode: backwards;
+}
+
+.fade-in:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.fade-in:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.fade-in:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.fade-in:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#bc > div > div > div{
+  animation-delay: 1.5s;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: scroll-up 1.5s ease-in-out forwards;
+
+}
+
+
+
+</style>
+<script>
+function isScrolledIntoView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
+$(window).scroll(function () {
+    $('#s .ct .lst > div, #s .ct .title *, #tvl .ct div.head, #pa .ct .title *, #te .ct .title *, #te .ct .lst *').each(function () {
+        if (isScrolledIntoView(this) === true) {
+            $(this).addClass('animate');
+        }
+    });
+
+});
+
+</script>
+</head>
+<body>
+<div id="__nuxt">
+<div id="__layout">
+<div>
+<header class="header1">
+<div class="header2">
+<div class="header3">
+<div class="flex1">
+<a class="flex2" aria-label="0xPulse" href="index.html">
+<div class>
+
+<img alt="Reflect" src="images/logo3.png" width="60" height="60" decoding="async" data-nimg="1" loading="lazy" style="color:transparent" sizes>
+</div>
+
+</a>
+</div>
+
+<div class="flexright">
+<nav id="n">
+<ul>
+<li>
+<span class="flexrighttext">About Us</span>
+<ol>
+<li>
+<!-- you can throw docs here -->
+<a href="https://">0X <br class="sf-hidden"> Docs </a>
+</li>
+</ol>
+</li>
+</ul>
+</nav>
+<a class="flexrighttext" href="">Token</a>
+<a class="flexrightbutton" href="https://">Open App</a>
+</div>
+</div>
+</div>
+</header>
+<script>
+  const header = document.querySelector('.header1');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+    header.classList.add('scroll');
+  } else {
+    header.classList.remove('scroll');
+  }
+});
+</script>
+<style>
+
+.header1{
+      -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-feature-settings: normal;
+    line-height: inherit;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    font-family: Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+    --tw-ring-offset-shadow: 0 0#0000;
+    --tw-ring-shadow: 0 0#0000;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+    position: fixed;
+    z-index: 30;
+    width: 100%;
+    transform: translate3d(var(--tw-translate-x),var(--tw-translate-y),0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    --tw-bg-opacity: 0.5;
+    box-shadow: var(--tw-ring-offset-shadow,0 0#0000),var(--tw-ring-shadow,0 0#0000),var(--tw-shadow);
+    --tw-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color);
+    --tw-backdrop-blur: blur(4px);
+    transition-property: color,background-color,border-color,outline-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-text-decoration-color,-webkit-backdrop-filter;
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+}        
+
+.scroll{
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  background-color: rgb(15 23 42/var(--tw-bg-opacity));
+}
+
+.header2{
+      -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-feature-settings: normal;
+    line-height: inherit;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    font-family: Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    --tw-ring-offset-shadow: 0 0#0000;
+    --tw-ring-shadow: 0 0#0000;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+    --tw-bg-opacity: 0.5;
+    --tw-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color);
+    --tw-backdrop-blur: blur(4px);
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 72rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.header3{
+      -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-feature-settings: normal;
+    line-height: inherit;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    font-family: Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    --tw-ring-offset-shadow: 0 0#0000;
+    --tw-ring-shadow: 0 0#0000;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+    --tw-bg-opacity: 0.5;
+    --tw-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color);
+    --tw-backdrop-blur: blur(4px);
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+}
+
+/* @media (min-width: 768px)
+.header3 
+    height: 5rem; */
+
+
+
+@media (min-width: 640px)
+.header1 {
+  padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+  
+.flex1{
+      -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-feature-settings: normal;
+    line-height: inherit;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    font-family: Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    --tw-ring-offset-shadow: 0 0#0000;
+    --tw-ring-shadow: 0 0#0000;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+    --tw-bg-opacity: 0.5;
+    --tw-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color);
+    --tw-backdrop-blur: blur(4px);
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+    display: flex;
+    flex: 1 1 0%;
+}
+.flex2{
+      -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-feature-settings: normal;
+    line-height: inherit;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    font-family: Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    --tw-text-opacity: 1;
+    --tw-ring-offset-shadow: 0 0#0000;
+    --tw-ring-shadow: 0 0#0000;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+    --tw-bg-opacity: 0.5;
+    --tw-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color);
+    --tw-backdrop-blur: blur(4px);
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.h-\[38px\] {
+    height: 38px;
+}
+
+.w-\[38px\] {
+    width: 38px;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.tracking-wide {
+    letter-spacing: .025em;
+}
+
+@media (min-width: 768px)
+.md\:flexstack {
+    display: flex;
+}
+
+.flexstack{
+
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-feature-settings: normal;
+    line-height: inherit;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    font-family: Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    --tw-ring-offset-shadow: 0 0#0000;
+    --tw-ring-shadow: 0 0#0000;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+    --tw-bg-opacity: 0.5;
+    --tw-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color);
+    --tw-backdrop-blur: blur(4px);
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+    flex: 1 1 0%;
+    justify-content: center;
+    display: flex;}
+
+.flexstacktext{
+    padding-right:15px;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-feature-settings: normal;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    font-family: Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    --tw-ring-offset-shadow: 0 0#0000;
+    --tw-ring-shadow: 0 0#0000;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+    --tw-bg-opacity: 0.5;
+    --tw-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color);
+    --tw-backdrop-blur: blur(4px);
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+    text-decoration: none;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgb(236 229 255/var(--tw-text-opacity));
+    transition-property: color,background-color,border-color,outline-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-text-decoration-color,-webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .2s;
+}
+
+.flexright{
+      -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-feature-settings: normal;
+    line-height: inherit;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    font-family: Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    --tw-ring-offset-shadow: 0 0#0000;
+    --tw-ring-shadow: 0 0#0000;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+    --tw-bg-opacity: 0.5;
+    --tw-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color);
+    --tw-backdrop-blur: blur(4px);
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+    display: flex;
+    flex: 1 1 0%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flexrighttext{
+      padding-left:15px;
+
+      -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-feature-settings: normal;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    font-family: Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    --tw-ring-offset-shadow: 0 0#0000;
+    --tw-ring-shadow: 0 0#0000;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+    --tw-bg-opacity: 0.5;
+    --tw-backdrop-blur: blur(4px);
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+    text-decoration: none;
+    flex: none;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgb(236 229 255/var(--tw-text-opacity));
+    transition-property: color,background-color,border-color,outline-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-text-decoration-color,-webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .2s;
+}
+
+.flexrightbutton{
+      -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-feature-settings: normal;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    font-family: Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+    --tw-bg-opacity: 0.5;
+    --tw-backdrop-blur: blur(4px);
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+    text-decoration: none;
+    --tw-translate-x: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-ring-offset-shadow: 0 0#0000;
+    --tw-ring-shadow: 0 0#0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    display: inline-block;
+    flex: none;
+    border-radius: .5rem;
+    background-image: linear-gradient(to bottom,var(--tw-gradient-stops));
+    --tw-gradient-from: #844be0;
+    --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to);
+    --tw-gradient-to: #221c86;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    box-shadow: var(--tw-ring-offset-shadow,0 0#0000),var(--tw-ring-shadow,0 0#0000),var(--tw-shadow);
+    --tw-shadow: inset 0px 1px 0px hsla(0,0%,100%,.1);
+    --tw-shadow-colored: inset 0px 1px 0px var(--tw-shadow-color);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+    --tw-drop-shadow: drop-shadow(0 10px 8px rgba(0,0,0,.04)) drop-shadow(0 4px 3px rgba(0,0,0,.1));
+    transition-property: color,background-color,border-color,outline-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-text-decoration-color,-webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .1s;
+    --tw-translate-y: 0.125rem;
+    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    opacity: .9;
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.5rem*var(--tw-space-x-reverse));
+    margin-left: calc(1.5rem*calc(1 - var(--tw-space-x-reverse)));
+
+    /* */
+
+    background: linear-gradient(228deg, #00eaff 0%, #0080ff 15%, #8000ff 45%, #e619e6 95%, #f00 100%);
+    --border: 0px;
+    --padding: calc(14.40741px + 0.18519vw);
+    --diff: 1.5;
+    --fs: calc(15.7037px + 0.09259vw);
+    align-items: center;
+    background-position: 100%0;
+    /* background-size: 300%auto; */
+    border-radius: 100px;
+    color: #fff;
+    display: inline-flex;
+    transition: background-position .6s,color .6s,transform .15s;
+}
+</style>
+<div id="app">
+<div id="smooth" data-scrollbar="true" tabindex="-1" style="outline:none">
+<div class="scroll-content" style="transform:translate3d(0px,0px,0px)">
+<div id="t">
+<div class="ct">
+<div class="r">
+<div data-reveal class="illu" style="transform:translate(0px,0px);opacity:1">
+<picture class="picture lg-0">
+<img src="images/9.png" loading="lazy" width="2000" height="2000" alt="0xPulse" draggable="false" https://0xpulse.com/srcset sizes>
+</picture>
+<picture class="picture lg-1">
+<img src="images/10.png" loading="lazy" width="2000" height="2000" alt="0xPulse" draggable="false" https://0xpulse.com/srcset sizes>
+</picture>
+<picture class="picture lg-2">
+<img src="images/11.png" loading="lazy" width="2000" height="2000" alt="0xPulse" draggable="false" https://0xpulse.com/srcset sizes>
+</picture>
+<picture class="picture lg-3">
+<img src="images/12.png" loading="lazy" width="2000" height="2000" alt="0xPulse" draggable="false" https://0xpulse.com/srcset sizes>
+</picture>
+<picture class="picture lg-5">
+<img src="images/13.png" loading="lazy" width="2000" height="2000" alt="0xPulse" draggable="false" https://0xpulse.com/srcset sizes>
+</picture>
+<picture class="picture lg-6">
+<img src="images/14.png" loading="lazy" width="2000" height="2000" alt="0xPulse" draggable="false" https://0xpulse.com/srcset sizes>
+</picture>
+</div>
+</div>
+<div class="l">
+<h1 data-reveal="bottom" style="transform:translate(0px,0px);opacity:1" class="fade-in">
+<span>0X PULSE</span>
+</h1>
+<div data-reveal="bottom" class="intro fade-in" style="transform:translate(0px,0px);opacity:1">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicin sunt quae eligendi enim consectetur, fuga ipsa quas eum? Maxime non neque quaerat autem, unde perspiciatis nisi dolorem ipsum, sunt veniam saepe laboriosam, officia cupiditate est ea!</p>
+</div>
+<div data-reveal="bottom" class="butt fade-in" style="transform:translate(0px,0px);opacity:1">
+<a title="Open App" to="https://" href="https://" target="_self" rel="noreferrer noopener" class="bn bn-max">
+<span>Open App</span>
+</a>
+<a title="" to="https://" href="https://" target="_blank" rel="noreferrer noopener" class="bn bn-max bn-border">
+<span>Buy Token</span>
+</a>
+</div>
+</div>
+</div>
+<div class="bg">
+<div style="transform:translate(0px,0%)"></div>
+</div>
+</div>
+<p style="text-align: center; font-size: calc(14.51852px + .46296vw); line-height: 1.6; opacity: 0; animation: fadeIn 4s ease-in-out forwards;z-index:30">{Contract here}</p>
+<div id="bc" style="padding-top: 30px !important;">
+<div class="ct">
+<div class="lst">
+<div data-reveal="bottom" style="transform:translate(0px,0px);opacity:1">
+<picture class="picture">
+<img src="images/pulse.svg" loading="lazy" width="478" height="122" alt="Pulse Chain • PulseCrypt" draggable="false" https://0xpulse.com/srcset sizes>
+</picture>
+</div>
+<div data-reveal="bottom" style="transform:translate(0px,0px);opacity:1">
+<picture class="picture">
+<img src="images/15.svg" loading="lazy" width="600" height="122" alt="Ethereum • PulseCrypt" draggable="false" https://0xpulse.com/srcset sizes>
+</picture>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="pa">
+<div class="ct">
+<div class="title">
+
+<div data-reveal="bottom" class="txt" style="transform:translate(0px,0px);opacity:1">
+</div>
+</div>
+</div>
+</div>
+<div id="te">
+<div class="ct">
+
+
+</div>
+</div>
+<div id="fe">
+<div class="ct">
+<div class="title">
+<h2 data-reveal="bottom" style="transform:translate(0px,0px);opacity:1">
+<span class="grd">News</span>
+</h2>
+</div>
+<ul data-reveal="bottom" class="social" style="transform:translate(0px,0px);opacity:1">
+<li>
+  /* telegram */
+<a href="https://t.me/" title="Telegram" target="_blank" rel="noopener noreferrer">
+<svg viewbox="0 0 32 32">
+<use xlink:href="#i-telegram"></use>
+</svg>
+</a>
+<li>
+  /* twitter */
+<a href="https://twitter.com/" title="Twitter" target="_blank" rel="noopener noreferrer">
+<svg viewbox="0 0 100 100">
+<use xlink:href="#i-twitter"></use>
+</svg>
+</a>
+</ul>
+<div data-reveal="bottom" class="txt" style="transform:translate(0px,0px);opacity:1">
+<p>Stay updated with the latest innovations in the DeFi sphere.</p>
+</div>
+</div>
+</div>
+<footer id="f">
+<div class="ct">
+<div class="top">
+<div class="left">
+<div data-reveal="bottom" class="tit grd" style="transform:translate(0px,0px);opacity:1">0xCrypt</div>
+<ul data-reveal="bottom" class="menu" style="transform:translate(0px,0px);opacity:1">
+<li>
+<a href="https://" title="Docs>Documentation</a>
+<li>
+<a href="index.html#" title="Docs">Docs</a>
+</ul>
+</div>
+<div>
+
+<ul data-reveal="bottom" class="menu" style="transform:translate(0px,0px);opacity:1">
+<li>
+
+</ul>
+</div>
+<div>
+<div data-reveal="bottom" class="tit grd" style="transform:translate(0px,0px);opacity:1">About us</div>
+<ul data-reveal="bottom" class="menu" style="transform:translate(0px,0px);opacity:1">
+<li>
+<a href="https://t.me/" title="Telegram">Telegram</a>
+<li>
+<a href="https://twitter.com/" target="_blank" title="Twitter" rel="noopener noreferrer">Twitter</a>
+<li>
+<a href="" title="Mail">Mail</a>
+</ul>
+</div>
+</div>
+<div class="bottom">
+<p data-reveal="bottom" class="grd" style="transform:translate(0px,0px);opacity:1">0xPULSEteam © 2023. All rights reserved.</p>
+</div>
+<div class="bottom" style="margin-top: 5px;">
+<p data-reveal="bottom" style="transform:translate(0px,0px);opacity:1;font-size:10px"></p>
+</div>
+</div>
+
+</footer>
+</div>
+<div class="scrollbar-track scrollbar-track-x" style="display:none"></div>
+<div class="scrollbar-track scrollbar-track-y" style="display:block">
+<div class="scrollbar-thumb scrollbar-thumb-y" style="height:122.953px;transform:translate3d(0px,0px,0px)"></div>
+</div>
+</div>
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:v="https://vecta.io/nano" class="sprite">
+<defs>
+<lineargradient id="grd-svg">
+<stop offset="0%" class="stop1"></stop>
+<stop offset="100%" class="stop2"></stop>
+</lineargradient>
+<lineargradient id="grd-svg-2">
+<stop offset="0%" class="stop3"></stop>
+<stop offset="100%" class="stop4"></stop>
+</lineargradient>
+</defs>
+<defs>
+<g id="i-check">
+<path fill="url(#grd-svg)" d="M127.526 15.294L45.665 78.216.863 42.861 0 59.255l44.479 53.862 83.932-81.451z"></path>
+</g>
+<g id="i-check-2">
+<path fill="url(#grd-svg-2)" d="M127.526 15.294L45.665 78.216.863 42.861 0 59.255l44.479 53.862 83.932-81.451z"></path>
+</g>
+<g id="i-left">
+<path d="M207.093 30.187L176.907 0l-128 128 128 128 30.186-30.187L109.28 128z"></path>
+</g>
+<g id="i-right">
+<path d="M79.093 0L48.907 30.187 146.72 128l-97.813 97.813L79.093 256l128-128z"></path>
+</g>
+<g id="i-telegram">
+<path fill="url(#grd-svg)" d="M2.617 15.832l6.44 2.187 15.29-9.348c.222-.136.449.165.258.341L13.03 19.668l-.43 5.965c-.033.454.514.706.838.387l3.564-3.505 6.516 4.932a1.21 1.21 0 0 0 1.909-.703l4.537-20.6c.259-1.175-.893-2.167-2.016-1.736L2.585 14.12c-.796.305-.774 1.438.033 1.712z"></path>
+</g>
+<g id="i-twitter">
+<path fill="url(#grd-svg)" d="m89.9 25.2c-3 1.3-6.1 2.2-9.4 2.6 3.4-2 6-5.2 7.2-9.1-3.2 1.9-6.7 3.2-10.4 4-3-3.2-7.3-5.2-12-5.2-9.1 0-16.4 7.4-16.4 16.4 0 1.3.1 2.5.4 3.7-13.6-.6-25.6-7.2-33.7-17.1-5.8 10.4.7 19 5 21.9-2.6 0-5.2-.8-7.4-2 0 8.1 5.7 14.8 13.1 16.3-1.6.5-5.2.8-7.4.3 2.1 6.5 8.2 11.3 15.3 11.4-5.6 4.4-13.8 7.9-24.3 6.8 7.3 4.7 15.9 7.4 25.2 7.4 30.2 0 46.6-25 46.6-46.6 0-.7 0-1.4-.1-2.1 3.4-2.5 6.2-5.4 8.3-8.7z"></path>
+</g>
+<g id="i-medium">
+<path fill="url(#grd-svg)" d="M285.6 256c0 72.3-58.3 131-130.1 131S25.3 328.3 25.3 256s58.3-131 130.1-131c71.9 0 130.2 58.7 130.2 131m142.7 0c0 68.1-29.1 123.3-65.1 123.3s-65.1-55.2-65.1-123.3 29.1-123.3 65.1-123.3 65.1 55.2 65.1 123.3m58.4 0c0 61-10.2 110.5-22.9 110.5-12.6 0-22.9-49.5-22.9-110.5s10.2-110.5 22.9-110.5c12.6 0 22.9 49.5 22.9 110.5"></path>
+</g>
+<g id="i-youtube">
+<path fill="url(#grd-svg)" d="M82.287 45.907c-.937-4.071-4.267-7.074-8.275-7.521-9.489-1.06-19.098-1.065-28.66-1.06-9.566-.005-19.173 0-28.665 1.06-4.006.448-7.334 3.451-8.27 7.521-1.334 5.797-1.35 12.125-1.35 18.094s0 12.296 1.334 18.093c.936 4.07 4.264 7.073 8.272 7.521 9.49 1.061 19.097 1.065 28.662 1.061 9.566.005 19.171 0 28.664-1.061 4.006-.448 7.336-3.451 8.272-7.521 1.333-5.797 1.34-12.124 1.34-18.093s.009-12.297-1.324-18.094zM28.9 50.4h-5.54v29.438h-5.146V50.4h-5.439v-4.822H28.9zm13.977 29.439h-4.629v-2.785c-1.839 2.108-3.585 3.136-5.286 3.136-1.491 0-2.517-.604-2.98-1.897-.252-.772-.408-1.994-.408-3.796V54.311h4.625v18.795c0 1.084 0 1.647.042 1.799.111.718.462 1.082 1.082 1.082.928 0 1.898-.715 2.924-2.166v-19.51h4.629zm17.573-7.662c0 2.361-.159 4.062-.468 5.144-.618 1.899-1.855 2.869-3.695 2.869-1.646 0-3.234-.914-4.781-2.824v2.474h-4.625V45.578h4.625v11.189c1.494-1.839 3.08-2.769 4.781-2.769 1.84 0 3.078.969 3.695 2.88.311 1.027.468 2.715.468 5.132zm17.457-4.259h-9.251v4.525c0 2.363.773 3.543 2.363 3.543 1.139 0 1.802-.619 2.066-1.855.043-.251.104-1.279.104-3.134h4.719v.675c0 1.491-.057 2.518-.099 2.98a6.59 6.59 0 0 1-1.08 2.771c-1.281 1.854-3.179 2.768-5.595 2.768s-4.262-.871-5.599-2.614c-.981-1.278-1.485-3.29-1.485-6.003v-8.941c0-2.729.447-4.725 1.43-6.015 1.336-1.747 3.177-2.617 5.54-2.617 2.321 0 4.161.87 5.457 2.617.969 1.29 1.432 3.286 1.432 6.015v5.285zm-6.929-9.755c-1.546 0-2.321 1.181-2.321 3.541v2.362h4.625v-2.362c-.001-2.36-.774-3.541-2.304-3.541zm-17.166 0c-.762 0-1.534.36-2.307 1.125v15.559c.772.774 1.545 1.14 2.307 1.14 1.334 0 2.012-1.14 2.012-3.445V61.646c0-2.302-.678-3.483-2.012-3.483zm2.584-23.19c1.705 0 3.479-1.036 5.34-3.168v2.814h4.675V8.82h-4.675v19.718c-1.036 1.464-2.018 2.188-2.953 2.188-.626 0-.994-.37-1.096-1.095-.057-.153-.057-.722-.057-1.817V8.82h-4.66v20.4c0 1.822.156 3.055.414 3.836.47 1.307 1.507 1.917 3.012 1.917zM23.851 20.598v14.021h5.184V20.598L35.271 0h-5.242l-3.537 13.595L22.812 0h-5.455l3.323 9.646c1.663 4.828 2.701 8.468 3.171 10.952zm18.368 14.375c2.342 0 4.162-.881 5.453-2.641.981-1.291 1.451-3.325 1.451-6.067v-9.034c0-2.758-.469-4.774-1.451-6.077-1.291-1.765-3.11-2.646-5.453-2.646-2.33 0-4.149.881-5.443 2.646-.993 1.303-1.463 3.319-1.463 6.077v9.034c0 2.742.47 4.776 1.463 6.067 1.293 1.76 3.113 2.641 5.443 2.641zm-2.231-18.679c0-2.387.724-3.577 2.231-3.577s2.229 1.189 2.229 3.577v10.852c0 2.387-.722 3.581-2.229 3.581s-2.231-1.194-2.231-3.581z"></path>
+</g>
+<g id="i-linkedin">
+<path fill="url(#grd-svg)" d="M140.9 140.9V93.3c0-23.4-5-41.2-32.3-41.2-13.1 0-21.9 7.1-25.5 14h-.3V54.2H57v86.7h27V98c0-11.4 2.1-22.2 16.2-22.2s14 13 14 23V141zM13.2 54.2h26.9v86.7H13.2zM26.7 11C18.1 11 11 18 11 26.6s7 15.7 15.6 15.7 15.7-7 15.7-15.6v-.2c0-8.5-7-15.5-15.6-15.5z"></path>
+</g>
+</defs>
+</svg>
+</div>
+</div>
+</div>
+<link href="stylesheet_3.css" rel="stylesheet" type="text/css" class="sf-hidden">
+<link href="stylesheet_4.css" rel="stylesheet" type="text/css" class="sf-hidden">
+<iframe scrolling="no" frameborder="0" allowtransparency="true" title="Twitter settings iframe" style="display:none"></iframe>
+<iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen style="visibility:hidden;display:none;width:0px;height:0px;padding:0px;border:none" title="Twitter analytics iframe"></iframe><script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
